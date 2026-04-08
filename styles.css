@@ -75,3 +75,50 @@ body {
     margin: 10px;
   }
 }
+
+/* contacto */
+
+.contactanos-titulo {
+    text-align: center;
+    padding: 20px;
+}    
+
+ .main-content .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 10deg, #222, #713aae);
+    color: #fff;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 50px;
+    box-shadow: 8px 8px 8px #222;
+}
+
+.main-content .formulario label {
+    margin: 10px;
+}
+
+.formulario input {
+    border-radius: 5px;
+    border: none;
+    width: fit-content;
+}
+
+.formulario button {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background-color: #2600ff;
+    color: #fff;
+    margin: 10px;
+}
+
+.solicitud-exitosa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
