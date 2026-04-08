@@ -13,8 +13,31 @@ body {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
+
+.container p{
+  text-align: justify;
+  margin-top: 10px;
+  display: block;
+}
+.container h2{
+  color: #713aae;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.detarcar{
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #ae3e3a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
 .logo {
   height: 100px; /* ajusta tamaño */
   width: auto;
@@ -54,7 +77,8 @@ body {
   background: #713aae;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 00;
+   margin-top: 100%; 
 }
 
 /* Tablet */
@@ -73,5 +97,78 @@ body {
 
   .menu {
     margin: 10px;
+  }
+}
+/* Estilos para quienes somos */
+
+.title {
+  color: #713aae;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.intro {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.section {
+  background: #f8f3ff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-left: 6px solid #713aae;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #00000010;
+}
+
+.section h2 {
+  color: #713aae;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.team-list li {
+  background: #e9d6ff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-list li:hover {
+  background: #d3b7ff;
+  transition: 0.3s;
+}
+
+/* RESPONSIVE para la seccion quienes somos */
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .team-list li {
+    font-size: 16px;
   }
 }
