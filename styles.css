@@ -81,6 +81,7 @@ body {
 .contactanos-titulo {
     text-align: center;
     padding: 20px;
+    color: #713aae;
 }    
 
  .main-content .formulario {
@@ -121,4 +122,43 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
+}
+
+/*movil*/
+@media (max-width: 768px) {
+
+    .contactanos-titulo {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .main-content .formulario {
+        margin: 15px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .main-content .formulario label {
+        font-size: 14px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .formulario button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .solicitud-exitosa {
+        padding: 20px;
+        text-align: center;
+    }
+
 }
