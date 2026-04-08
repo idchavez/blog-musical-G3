@@ -17,7 +17,7 @@ body {
 }
 
 .container p{
-  text-align: justify;
+  text-align: center;
   margin-top: 10px;
   display: block;
 }
@@ -99,6 +99,92 @@ body {
     margin: 10px;
   }
 }
+
+/* contacto */
+
+.contactanos-titulo {
+    text-align: center;
+    padding: 20px;
+    color: #713aae;
+}    
+
+ .main-content .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 10deg, #222, #713aae);
+    color: #fff;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 50px;
+    box-shadow: 8px 8px 8px #222;
+}
+
+.main-content .formulario label {
+    margin: 10px;
+}
+
+.formulario input {
+    border-radius: 5px;
+    border: none;
+    width: fit-content;
+}
+
+.formulario button {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background-color: #2600ff;
+    color: #fff;
+    margin: 10px;
+}
+
+.solicitud-exitosa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*movil*/
+@media (max-width: 768px) {
+
+    .contactanos-titulo {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .main-content .formulario {
+        margin: 15px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .main-content .formulario label {
+        font-size: 14px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .formulario button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .solicitud-exitosa {
+        padding: 20px;
+        text-align: center;
+    }
+}
 /* Estilos para quienes somos */
 
 .title {
@@ -171,4 +257,41 @@ body {
   .team-list li {
     font-size: 16px;
   }
+}
+
+/* estilos inici*/
+
+.contenidoTop5 {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    margin: 0;
+    max-width: 1100px;
+    padding: 40px;
+}
+/* texto */
+.textoContenidoTop5 {
+    flex: 3;       
+    max-width: 800px; 
+}
+/* contenedor de la imagen */
+#imagenTop5 {
+    flex: 1;
+    justify-content: center;
+}
+/* imagen */
+#top5 {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .contenidoTop5 {
+        flex-direction: column;
+    }
+    #top5 {
+        max-width: 100%;
+    }
 }
